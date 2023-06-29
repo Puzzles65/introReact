@@ -1,8 +1,9 @@
 import React from 'react';
+import "../NewSkillForm.css"
 
 const NewSkillForm = () => {
     return (
-        <form action="form">
+        <form className='NewSkillForm' action="form">
             <label htmlFor="skill">Skill</label>
             <input type="text" />
             <label htmlFor="level">Level</label>

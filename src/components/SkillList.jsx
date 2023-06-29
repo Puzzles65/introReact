@@ -1,12 +1,15 @@
 import React from 'react';
-import SkillListItem from './SkillListItem';
+import SkillListItems from './SkillListItems';
 
-const SkillList = () => {
+const SkillList = ({skills}) => {
+
+
+  //const skillsListItems = skills.map(s => <SkillListItems skill = {s}/>)
   return (
     <ul>
-      <SkillListItem />
-      <SkillListItem />
-      <SkillListItem />
+      {skills.map((s, idx) => (
+        <SkillListItems skill={s} key={idx}/>
+      ))}
     </ul>
   );
 };
