@@ -1,5 +1,5 @@
 import React from 'react';
-import "../NewSkillForm.css"
+import "../styles/NewSkillForm.css"
 
 const NewSkillForm = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../SkillListItem.css";
+import "../styles/SkillListItem.css";
 
 const SkillListItems = ({skill}) => {
   return <li className="SkillListItem">
