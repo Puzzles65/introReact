@@ -14,12 +14,16 @@ const App = () => {
     { name: "Python", level: 2 },
   ]);
 
+  function addSkill(newSkill) {
+    setSkills([...skills, newSkill]);
+  }
+
   return (
     <div className='App'>
       <h1 className='teal-text'>React Dev Skills</h1>
       {/*pass skills as a prop*/}
       <SkillList skills={skills} />
-      <NewSkillForm />
+      <NewSkillForm addSkill={addSkill} />
     </div>
   );
 };
